@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    background-image: url('https://imgur.com/Fn9FQwT.jpg'), url('https://imgur.com/VfcgZZ9.jpg');
+    background-size: cover;
+    background-blend-mode: difference;
+}

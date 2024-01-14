@@ -1,0 +1,9 @@
+.container {
+    background-color: black;
+    color: #7add58;
+}
+
+span {
+    color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<div class="alert alert-danger" role="alert">
+    <h6>By using this application, you acknowledge and agree to the terms outlined in <span (click)="goTotnc()">Terms and Conditions</span>.</h6>
+</div>
+<div class="container mt-3">
+    <button class="button-85" role="button" style="margin-left: 40%;margin-top: 10%;" (click)="getGeolocation()">Get
+        User Info</button>
+
+    <div *ngIf="userInfo" class="user-info-container mt-3">
+        <h1>User Information</h1>
+        <div class="info-item row" *ngFor="let item of getUserInfoItems()">
+            <div class="col-6 col-md-3">
+                <span class="info-label">{{ item.label }}:</span>
+            </div>
+            <div class="col-6 col-md-9">
+                <span class="info-value">{{ item.value }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start fixed-bottom mt-4">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a class="text-dark" href="https://amal-rajesh.web.app"><i>AmalRajesh</i></a> © 2024 Copyright:
+    </div>
+</footer>
